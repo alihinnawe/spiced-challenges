@@ -2,15 +2,14 @@ import dbConnect from "@/db/connect";
 import Product from "../../../db/models/Product";
 
 export default async function handler(request, response) {
-  const { id } = request.query;
-  console.log("idsssssssssssssssssssssssssssssssssssssssssssssss", id);
   await dbConnect();
+  const { id } = request.query;
 
   if (request.method === "GET") {
     try {
-      const product = await Product.findOne({ _id: id });
+      // const product = await Product.findOne({ _id: id });
       // or we can use const product = await Product.findById(id)
-      console.log("prrrrrrrroddddddddddddddddddddd", product);
+      const product = await Product.findById(id).populate("reviews");
       if (!product) {
         return response.status(404).json({ status: "Not Found" });
       }
