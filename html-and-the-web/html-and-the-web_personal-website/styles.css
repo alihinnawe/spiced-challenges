@@ -54,5 +54,12 @@ span {
   font-size: 70px;
 }
 .homePage {
-  background-color: Navy;
+  /* background-color: Navy; */
+  background-image: url("bg.jpg");
+}
+
+.figureImage1 {
+  display: flex;
+  width: 100%;
+  padding: -20px;
 }
