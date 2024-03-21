@@ -3,32 +3,32 @@ span {
 }
 
 .figureImage {
-  width: 300px;
+  width: 350px;
   max-width: 100%;
   height: auto;
-  padding: 100px;
+  padding: 120px;
 }
 
 .navBarDiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: row wrap;
   align-items: stretch;
 }
 
 .navBar {
+  height: 10px;
   display: flex;
-  background-color: #06ab1f;
-  height: auto;
+  /* height: auto; */
 }
 
 .navBar a {
   display: flex;
   color: white;
   text-decoration: none;
-  margin: 0 75px;
-  font-size: 18px;
-  padding: 25px;
+  margin: 0 20px;
+  font-size: 30px;
+  padding: 100px;
 }
 
 .navBar div:hover {
@@ -36,10 +36,23 @@ span {
 }
 
 .introductionAli {
+  color: white;
   display: flex;
   justify-content: center;
 }
 .introText {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 200px;
+  align-items: stretch;
+}
+
+.familyName {
+  color: aliceblue;
+  padding: 20px;
+  font-size: 70px;
+}
+.homePage {
+  background-color: Navy;
 }
