@@ -6,6 +6,7 @@ span {
   width: 300px;
   max-width: 100%;
   height: auto;
+  padding: 100px;
 }
 
 .navBarDiv {
@@ -25,15 +26,20 @@ span {
   display: flex;
   color: white;
   text-decoration: none;
-  margin: 0 100px;
+  margin: 0 75px;
   font-size: 18px;
   padding: 25px;
 }
 
-.navBar div {
-  justify-content: center;
-}
-
 .navBar div:hover {
   background-color: rgb(14, 230, 230);
+}
+
+.introductionAli {
+  display: flex;
+  justify-content: center;
+}
+.introText {
+  justify-content: center;
+  padding: 200px;
 }
