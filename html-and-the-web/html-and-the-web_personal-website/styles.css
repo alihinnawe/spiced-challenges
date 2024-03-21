@@ -22,14 +22,15 @@ span {
 }
 
 .navBar a {
+  display: flex;
   color: white;
   text-decoration: none;
   margin: 0 100px;
   font-size: 18px;
+  padding: 25px;
 }
 
-.navBar ~ div {
-  display: flex;
+.navBar div {
   justify-content: center;
 }
 
