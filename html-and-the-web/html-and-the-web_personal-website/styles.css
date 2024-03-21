@@ -7,8 +7,11 @@ span {
   max-width: 100%;
   height: auto;
   padding: 120px;
+  transition: transform 0.5s ease-in-out; /* Apply transition to transform */
 }
-
+.figureImage:hover {
+  transform: scale(1.2); /* Scale the image up to 120% */
+}
 .navBarDiv {
   display: flex;
   justify-content: center;
@@ -61,5 +64,4 @@ span {
 .figureImage1 {
   display: flex;
   width: 100%;
-  padding: -20px;
 }
