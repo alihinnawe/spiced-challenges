@@ -2,41 +2,37 @@ span {
   text-shadow: yellow 0 0 3px, green 4px 4px 10px;
 }
 
-#centeredParagraph {
-  width: 200px;
-  margin: 0 auto;
-}
-
 .figureImage {
   width: 300px;
   max-width: 100%;
   height: auto;
 }
 
-.navBar {
-  width: 50%;
-  /* position: absolute;
-   */
+.navBarDiv {
   display: flex;
-  justify-content: space-between;
-  background-color: #06ab1f;
-  /* padding: 10px 0; */
+  justify-content: space-around;
   flex-flow: row wrap;
   align-items: stretch;
-  flex-direction: row;
+}
+
+.navBar {
+  display: flex;
+  background-color: #06ab1f;
+  height: auto;
 }
 
 .navBar a {
   color: white;
   text-decoration: none;
-  margin: 0 50px;
+  margin: 0 100px;
   font-size: 18px;
+}
+
+.navBar ~ div {
+  display: flex;
+  justify-content: center;
 }
 
 .navBar div:hover {
   background-color: rgb(14, 230, 230);
-}
-.navBarRoot {
-  display: flex;
-  justify-content: center;
 }
