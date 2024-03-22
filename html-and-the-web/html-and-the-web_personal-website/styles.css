@@ -14,22 +14,35 @@ span {
   flex-direction: column;
   position: fixed;
   z-index: 100;
+  top: 65px;
 }
 
 .navBar a {
   display: flex;
-  color: white;
+  color: deeppink;
   text-decoration: none;
-  margin: 0 15px;
   font-size: 30px;
-  padding: 100px;
-  justify-content: space-between;
-  margin: 10px 0;
+  padding: 65px;
+  justify-content: space-around;
   transform-origin: bottom left;
-  transform: rotate(-90deg) translateY(100%); /* Add margin between the links */
+  transform: rotate(-90deg) translateY(100%);
+  margin: 20px;
+}
+
+.GitLinkedIn {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: -50px;
+  left: 0;
+  padding: 75px;
 }
 
 .navBar a:hover {
+  text-decoration: underline;
+}
+
+.navBar img:hover {
   text-decoration: underline;
 }
 
@@ -51,9 +64,9 @@ span {
   padding: 20px;
   font-size: 50px;
 }
-.homePage {
+/* .homePage {
   background-image: url("bg.jpg");
-}
+} */
 
 .figureImage1 {
   display: flex;
@@ -72,3 +85,10 @@ span {
 .figureImage:hover {
   transform: scale(1.2);
 }
+
+/* .navPlusLogos {
+  display: flex;
+  flex-direction: column;
+  padding: 75px;
+  position: fixed;
+} */
