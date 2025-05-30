@@ -1,11 +1,13 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  margin-top: -10px;
 }
 
-body {
+body>section {
   margin: 0;
   padding: 0;
+  margin-left: 100px;
   font-family: sans-serif;
 }
 
@@ -25,12 +27,16 @@ body {
   background: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   z-index: 1000;
 }
-
+nav>span {
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins ExtraBold";
+}
 /* Navigation links */
 .navOverImage a {
   color: white;
@@ -42,7 +48,8 @@ body {
 
 /* Image container on the right */
 .imageContainer {
-  margin-left: 100px; /* Prevent image from hiding under fixed nav */
+  margin-top: 0px;
+  margin-left: 90px; /* Prevent image from hiding under fixed nav */
   flex-grow: 1;
   display: flex;
   align-items: center;
