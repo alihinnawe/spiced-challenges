@@ -1,3 +1,38 @@
 * {
   box-sizing: border-box;
 }
+
+body>article {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  align-content: stretch
+}
+body>article>img {
+  width:350px;
+}
+
+h2 {
+  background-color: aquamarine;
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: xx-large;
+}
+
+article > p:first-of-type {
+
+color: rgb(13, 206, 52);
+}
+
+article :nth-child(4){
+
+color: rgb(132, 3, 33);
+}
+
+button:hover {
+  background-color: aqua;
+
+}
