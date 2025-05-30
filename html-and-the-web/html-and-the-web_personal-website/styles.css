@@ -1,94 +1,58 @@
-span {
-  text-shadow: yellow 0 0 3px, green 4px 4px 10px;
+html {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
-.navBarDiv {
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
-  align-items: stretch;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.navBar {
+.mainLayout {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Fixed nav on the left */
+.navOverImage {
   position: fixed;
-  z-index: 100;
-  top: 65px;
-}
-
-.navBar a {
-  display: flex;
-  color: deeppink;
-  text-decoration: none;
-  font-size: 30px;
-  padding: 65px;
-  justify-content: space-around;
-  transform-origin: bottom left;
-  transform: rotate(-90deg) translateY(100%);
-  margin: 20px;
-}
-
-.GitLinkedIn {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: -50px;
+  top: 0;
   left: 0;
-  padding: 75px;
+  height: 100vh;
+  width: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1000;
 }
 
-.navBar a:hover {
-  text-decoration: underline;
-}
-
-.navBar img:hover {
-  text-decoration: underline;
-}
-
-.introductionAli {
+/* Navigation links */
+.navOverImage a {
   color: white;
-  display: flex;
-  justify-content: center;
-}
-.introText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 200px;
-  align-items: stretch;
+  text-decoration: none;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
-.familyName {
-  color: aliceblue;
-  padding: 20px;
-  font-size: 50px;
-}
-/* .homePage {
-  background-image: url("bg.jpg");
-} */
-
-.figureImage1 {
+/* Image container on the right */
+.imageContainer {
+  margin-left: 100px; /* Prevent image from hiding under fixed nav */
+  flex-grow: 1;
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+  background: #111; 
 }
 
+/* Image styling */
 .figureImage {
-  width: 350px;
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.5s ease-in-out;
-  z-index: 1;
-  position: relative;
+  max-height: 90vh;
+  width: auto;
 }
-
-.figureImage:hover {
-  transform: scale(1.2);
-}
-
-/* .navPlusLogos {
-  display: flex;
-  flex-direction: column;
-  padding: 75px;
-  position: fixed;
-} */
