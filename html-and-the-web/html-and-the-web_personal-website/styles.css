@@ -7,7 +7,7 @@ html {
 body>section {
   margin: 0;
   padding: 0;
-  margin-left: 100px;
+  margin-left: 110px;
   font-family: sans-serif;
 }
 
@@ -24,7 +24,8 @@ body>section {
   left: 0;
   height: 100vh;
   width: 100px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,6 +38,9 @@ nav>span {
   font-weight: bold;
   font-family: "Poppins ExtraBold";
 }
+nav a:hover {
+  text-decoration: underline;
+}
 /* Navigation links */
 .navOverImage a {
   color: white;
@@ -46,17 +50,26 @@ nav>span {
   text-orientation: upright;
 }
 
-/* Image container on the right */
 .imageContainer {
   margin-top: 0px;
   margin-left: 90px; /* Prevent image from hiding under fixed nav */
   flex-grow: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center; /* changed from flex-end */
   padding-right: 50px;
-  background: #111; 
+  background: #111;
+  gap: 30px; /* Adds space between text and image */
 }
+
+.introText {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  max-width: 400px;
+}
+
 
 /* Image styling */
 .figureImage {
